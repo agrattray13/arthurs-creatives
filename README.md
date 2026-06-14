@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Arthur's Creatives
 
 ## Overview
@@ -51,14 +52,10 @@ Comprehensive marketing solutions including content creation, social media manag
 
 ## Technology Stack
 
-* WordPress
-* Elementor Pro
-* Shopify
-* FlutterFlow
 * Next.js
 * Tailwind CSS
-* Firebase
-* AI Integrations
+* React
+* Framer Motion
 * Cloud Hosting Solutions
 
 ---
@@ -87,3 +84,30 @@ Arthur's Creatives
 Building modern websites, applications, and AI-powered solutions for growing businesses.
 
 "Creative ideas. Professional execution. Real results."
+
+---
+
+## Local Development
+
+This repository is a Next.js + TypeScript + Tailwind CSS scaffold for the Arthur's Creatives agency site.
+
+Add images and logo:
+
+- Place project images in `public/images/`.
+  - Example filenames used in the portfolio: `arthurs-furniture.jpg`, `anassa-reiki.jpg`, `artesian-steps.jpg`.
+- Add a logo file at `public/images/logo.png` (or `logo.svg`).
+
+Run locally:
+
+```bash
+cd /workspaces/arthurs-creatives/ok\ cool
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+npm run start
+```
