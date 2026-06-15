@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'About', href: '/about', external: false },
@@ -12,9 +13,10 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 border-b border-white/10 bg-[#111738]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-8">
-        <a href="#home" className="text-xl font-semibold tracking-tight text-white">
-          Arthur&apos;s Creatives
-        </a>
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/images/logo.svg" alt="Arthur's Creatives" width={44} height={44} className="rounded-full bg-white/5" />
+            <span className="text-xl font-semibold tracking-tight text-white">Arthur&apos;s Creatives</span>
+          </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <Link
